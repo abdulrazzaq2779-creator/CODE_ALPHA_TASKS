@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumina Music Player — Mohammed Abdul Razzaq</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="player">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <span class="sidebar-label">Playlist</span>
+      <span class="sidebar-count" id="track-count">5 tracks</span>
+    </div>
+    <div class="track-list" id="track-list"></div>
+  </aside>
+  <!-- MAIN -->
+  <section class="main">
+    <div class="top-bar">
+      <span class="now-label">
+        <span class="live-dot" id="live-dot"></span>
+        Now Playing
+      </span>
+      <div class="top-btns">
+        <button class="tog" id="btn-shuffle" title="Shuffle" aria-pressed="false">⇄</button>
+        <button class="tog" id="btn-repeat"  title="Repeat"  aria-pressed="false">↻</button>
+      </div>
+    </div>
+    <div class="art-section">
+      <div class="disc-wrap">
+        <div class="disc" id="disc">
+          <span class="disc-emoji" id="disc-emoji">🎵</span>
+          <div class="disc-hole"><div class="hole-dot"></div></div>
+        </div>
+      </div>
+      <div class="side-acts">
+        <button class="sact" id="btn-like" title="Like">♡</button>
+        <button class="sact" title="Queue">＋</button>
+        <button class="sact" title="Share">↗</button>
+      </div>
+    </div>
+    <div class="track-disp">
+      <div class="disp-name"   id="disp-name">Lumina Player</div>
+      <div class="disp-artist" id="disp-artist">Upload a song or press play</div>
+    </div>
+    <div class="vis-section" id="vis-zone">
+      <canvas id="vis-canvas"></canvas>
+    </div>
+    <div class="prog-section">
+      <div class="prog-bar" id="prog-bar">
+        <div class="prog-fill" id="prog-fill" style="width:0%"></div>
+      </div>
+      <div class="time-row">
+        <span id="t-cur">0:00</span>
+        <span id="t-dur">0:00</span>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="ctrl sm" id="btn-prev" title="Previous">⏮</button>
+      <button class="ctrl md" id="btn-back" title="−10s">−10</button>
+      <button class="ctrl play" id="btn-play" title="Play / Pause">▶</button>
+      <button class="ctrl md" id="btn-fwd"  title="+10s">+10</button>
+      <button class="ctrl sm" id="btn-next" title="Next">⏭</button>
+    </div>
+    <div class="upload-row">
+      <label class="upload-btn" for="file-input">
+        ＋ Upload Your Music (.mp3 / .wav / .ogg)
+      </label>
+      <input type="file" id="file-input" accept="audio/*" multiple />
+      <span class="status-badge" id="status-badge" style="display:none">Ready</span>
+    </div>
+    <div class="vol-section">
+      <span class="vol-ic" id="vol-ic">🔊</span>
+      <input type="range" class="vol-sl" id="vol-sl" min="0" max="100" value="80" />
+      <span class="vol-val" id="vol-val">80</span>
+    </div>
+  </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
