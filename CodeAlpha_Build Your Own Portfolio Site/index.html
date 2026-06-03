@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mohammed Abdul Razzaq — Full Stack Web Developer, B.Tech CSE student at IARE Hyderabad">
+<title>Mohammed Abdul Razzaq — Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700;9..40,800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<div id="scroll-bar"></div>
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-word"><span>M.A.Razzaq</span></div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+ 
+<!-- MOBILE NAV -->
+<div class="mob-nav" id="mob-nav">
+  <a href="#about"   onclick="closeMob()">About</a>
+  <a href="#skills"  onclick="closeMob()">Skills</a>
+  <a href="#projects" onclick="closeMob()">Projects</a>
+  <a href="#contact" onclick="closeMob()">Contact</a>
+</div>
+ 
+<!-- NAV -->
+<nav id="nav">
+  <a class="nav-logo" href="#hero">M.A.R/DEV</a>
+  <ul class="nav-links">
+    <li><a href="#about"><span class="nn">01</span> About</a></li>
+    <li><a href="#skills"><span class="nn">02</span> Skills</a></li>
+    <li><a href="#projects"><span class="nn">03</span> Projects</a></li>
+    <li><a href="#contact"><span class="nn">04</span> Contact</a></li>
+  </ul>
+  <a class="nav-cta" href="mailto:abdulrazzaq2779@gmail.com">Say Hello →</a>
+  <div class="ham" id="ham" onclick="toggleMob()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+ 
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <div class="hero-l">
+    <div class="hero-eyebrow">
+      <div class="eyebrow-dot"></div>
+      Available for Internship &amp; Collaboration
+    </div>
+    <h1 class="hero-name">
+      <span class="line"><span>Mohammed</span></span>
+      <span class="line"><span>Abdul</span></span>
+      <span class="line"><span>Razzaq</span></span>
+    </h1>
+    <div class="hero-role">
+      <span class="role-badge solid">Full Stack Developer</span>
+      <span class="role-badge outline">B.Tech CSE · IARE</span>
+    </div>
+    <p class="hero-desc">
+      Combining logic with creativity to engineer unforgettable digital experiences — built one curious commit at a time.
+    </p>
+    <div class="hero-btns">
+      <a class="btn-dark" href="#projects">See my work ↘</a>
+      <a class="btn-light" href="#contact">Get in touch</a>
+    </div>
+  </div>
+ 
+  <div class="hero-r">
+    <div class="hero-bg-letter" aria-hidden="true">R</div>
+ 
+    <div class="hero-info">
+      <div class="info-block">
+        <div class="info-label">Location</div>
+        <div class="info-val">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Hyderabad, India
+        </div>
+      </div>
+      <div class="info-block">
+        <div class="info-label">Currently</div>
+        <div class="info-val">B.Tech CSE · Semester II</div>
+        <div class="info-sub">Institute of Aeronautical Engineering College</div>
+      </div>
+ 
+      <div class="hero-contacts">
+        <a class="contact-badge" href="mailto:abdulrazzaq2779@gmail.com">
+          <div class="cb-icon cb-gmail">
+            <svg viewBox="0 0 24 24"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+          </div>
+          abdulrazzaq2779@gmail.com
+        </a>
+        <a class="contact-badge" href="https://www.linkedin.com/in/mohammed-razzaq-6a2362384" target="_blank" rel="noopener">
+          <div class="cb-icon cb-li">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          linkedin.com/in/mohammed-razzaq
+        </a>
+        <a class="contact-badge" href="tel:+916309696520">
+          <div class="cb-icon cb-phone">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.91-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          +91 6309 696 520
+        </a>
+      </div>
+    </div>
+ 
+    <div class="hero-stat-row">
+      <div class="hero-stat">
+        <div class="hero-stat-num">II</div>
+        <div class="hero-stat-lbl">Semester · CSE</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">12+</div>
+        <div class="hero-stat-lbl">Technologies</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">∞</div>
+        <div class="hero-stat-lbl">Curiosity</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">01</div>
+        <div class="hero-stat-lbl">Project shipped</div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <div class="ticker-item"><div class="ticker-diamond"></div> Full Stack Development</div>
+    <div class="ticker-item"><div class="ticker-diamond"></div> Backend Systems</div>
+    <div class="ticker-item"><div class="ticker-diamond"></div> Creative Frontend</div>
+    <div class="ticker-item"><div class="ticker-diamond"></div> Java · Python · JS</div>
+    <div class="ticker-item"><div class="ticker-diamond"></div> Problem Solving</div>
+    <div class="ticker-item"><div class="ticker-diamond"></div> REST APIs</div>
+    <div class="ticker-item"><div class="ticker-diamond"></div> MongoDB · MySQL</div>
+    <div class="ticker-item"><div class="ticker-diamond"></div> React · Node.js</div>
+    <div class="ticker-item"><div class="ticker-diamond"></div> Full Stack Development</div>
+    <div class="ticker-item"><div class="ticker-diamond"></div> Backend Systems</div>
+    <div class="ticker-item"><div class="ticker-diamond"></div> Creative Frontend</div>
+    <div class="ticker-item"><div class="ticker-diamond"></div> Java · Python · JS</div>
+    <div class="ticker-item"><div class="ticker-diamond"></div> Problem Solving</div>
+    <div class="ticker-item"><div class="ticker-diamond"></div> REST APIs</div>
+    <div class="ticker-item"><div class="ticker-diamond"></div> MongoDB · MySQL</div>
+    <div class="ticker-item"><div class="ticker-diamond"></div> React · Node.js</div>
+  </div>
+</div>
+ 
+<!-- ══════════ ABOUT ══════════ -->
+<section class="section" id="about">
+  <div class="about-grid">
+    <div class="about-l reveal">
+      <div class="section-tag">01 / About</div>
+      <p class="about-l section-sub" style="margin-top:.4rem">The maker behind the keyboard.</p>
+    </div>
+ 
+    <div class="about-text reveal" style="transition-delay:.1s">
+      <div class="section-h">I build software that <em>actually feels like something.</em></div>
+      <div class="section-rule"></div>
+      <p>I'm <b>Mohammed Abdul Razzaq</b>, a driven Computer Science student from <b>Hyderabad, India</b>. Currently in Semester II at the <b>Institute of Aeronautical Engineering College (IARE)</b>, I'm on a mission to become a well-rounded full stack developer.</p>
+      <p>I have a deep passion for <b>problem solving</b> — whether it's debugging tricky logic or architecting a clean system. I believe every challenge is an opportunity to learn something new, and learning is something I never want to stop doing.</p>
+      <p>I'm currently sharpening my skills across the full web stack, exploring backend development, and building projects that <span class="hl">solve real problems</span>. Always open to internships, collaborations, and new opportunities.</p>
+    </div>
+ 
+    <div class="about-r reveal right" style="transition-delay:.2s">
+      <div class="about-card">
+        <div class="about-card-top">
+          <div class="about-card-mono">MAR</div>
+        </div>
+        <div class="about-card-body">
+          <div class="ac-row">
+            <div class="ac-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            Hyderabad, India — <span>Telangana</span>
+          </div>
+          <div class="ac-row">
+            <div class="ac-icon"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+            B.Tech CSE — <span>IARE · II Sem</span>
+          </div>
+          <div class="ac-row">
+            <div class="ac-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+            Status — <span style="color:var(--teal)">Open to Work ✓</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="as-item"><div class="as-num">10+</div><div class="as-lbl">Projects built</div></div>
+        <div class="as-item"><div class="as-num">4+</div><div class="as-lbl">Languages</div></div>
+        <div class="as-item"><div class="as-num">2025</div><div class="as-lbl">Started dev</div></div>
+        <div class="as-item"><div class="as-num">∞</div><div class="as-lbl">Curiosity</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══════════ SKILLS ══════════ -->
+<section class="section full-bleed" id="skills">
+  <div class="inner">
+    <div class="skills-head reveal">
+      <div>
+        <div class="section-tag">02 / Toolbox</div>
+        <div class="section-h">The instruments<br>I play with.</div>
+      </div>
+      <p>A growing toolkit — from low-level language fundamentals to modern web frameworks. I pick the right tool for the problem, not the trend.</p>
+    </div>
+ 
+    <div class="skills-grid reveal" style="transition-delay:.1s">
+      <!-- Java -->
+      <div class="skill-cell">
+        <div class="sc-top"><span class="sc-num">01 · LANGUAGE</span><span class="sc-arrow">↗</span></div>
+        <svg class="skill-logo" viewBox="0 0 128 128"><path fill="#0074BD" d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.097 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.964zm-2.988-13.665s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"/><path fill="#EA2D2E" d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 0-42.731 10.67-22.324 34.187z"/><path fill="#0074BD" d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zm40.697 22.747c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.001.364-.328.468-.617z"/><path fill="#EA2D2E" d="M76.491 1.587S89.459 14.563 64.188 34.51c-20.266 16.006-4.621 25.13-.007 35.559-11.831-10.673-20.509-20.07-14.688-28.815C58.041 28.42 81.722 22.195 76.491 1.587z"/><path fill="#0074BD" d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.572 7.231-19.286 3.612-43.09 3.191-57.204.874 0 .001 2.894 2.395 17.959 3.331z"/></svg>
+        <div class="sc-name">Java</div>
+      </div>
+      <!-- Python -->
+      <div class="skill-cell">
+        <div class="sc-top"><span class="sc-num">02 · LANGUAGE</span><span class="sc-arrow">↗</span></div>
+        <svg class="skill-logo" viewBox="0 0 128 128"><linearGradient id="pa" x1="70.252" y1="1237.476" x2="170.659" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5A9FD4"/><stop offset="1" stop-color="#306998"/></linearGradient><linearGradient id="pb" x1="209.474" y1="1098.811" x2="173.62" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFD43B"/><stop offset="1" stop-color="#FFE873"/></linearGradient><path fill="url(#pa)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zm-13.354 7.569c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z"/><path fill="url(#pb)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.927 82.459c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"/></svg>
+        <div class="sc-name">Python</div>
+      </div>
+      <!-- C -->
+      <div class="skill-cell">
+        <div class="sc-top"><span class="sc-num">03 · LANGUAGE</span><span class="sc-arrow">↗</span></div>
+        <svg class="skill-logo" viewBox="0 0 128 128"><path fill="#659AD3" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"/><path fill="#03599C" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"/><path fill="#fff" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-13-7.6z"/></svg>
+        <div class="sc-name">C</div>
+      </div>
+      <!-- JavaScript -->
+      <div class="skill-cell">
+        <div class="sc-top"><span class="sc-num">04 · LANGUAGE</span><span class="sc-arrow">↗</span></div>
+        <svg class="skill-logo" viewBox="0 0 128 128"><path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"/><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.454 3.499 16.752 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"/></svg>
+        <div class="sc-name">JavaScript</div>
+      </div>
+      <!-- HTML5 -->
+      <div class="skill-cell">
+        <div class="sc-top"><span class="sc-num">05 · MARKUP</span><span class="sc-arrow">↗</span></div>
+        <svg class="skill-logo" viewBox="0 0 128 128"><path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"/><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"/><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"/><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.336-3.696h-3.708zm0-27.856v13.762h33.244l.277-3.092.628-6.978.329-3.692z"/></svg>
+        <div class="sc-name">HTML5</div>
+      </div>
+      <!-- CSS3 -->
+      <div class="skill-cell">
+        <div class="sc-top"><span class="sc-num">06 · STYLING</span><span class="sc-arrow">↗</span></div>
+        <svg class="skill-logo" viewBox="0 0 128 128"><path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"/><path fill="#33A9DC" d="M64.001 117.025l36.559-10.137 8.601-96.354H64.001v106.491z"/><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"/><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"/><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"/><path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.044-.331-3.679h34.646zm-.047 27.994v13.831H47.791l-.277-3.108-.631-7.044-.33-3.679h17.448z"/></svg>
+        <div class="sc-name">CSS3</div>
+      </div>
+      <!-- React -->
+      <div class="skill-cell">
+        <div class="sc-top"><span class="sc-num">07 · FRONTEND</span><span class="sc-arrow">↗</span></div>
+        <svg class="skill-logo" viewBox="0 0 128 128"><g fill="#61DAFB"><circle cx="64" cy="64" r="11.4"/><path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13-1.2-21.8-9.6-26.9-14.8-8.8-35.7 2.2-57.3 28.4-21.7-5.5-39.7-3.8-48.6 6.8-8.8 10.6-5.4 30.5 8.9 50.4-2.4 4.4-4 8.8-4.9 13.1-2.5 11.4-.2 20.4 7.4 25.5 2.1 1.4 4.6 2.1 7.4 2.1 5.9 0 13-2.8 20.8-8.2 8.4 5.6 16.8 9.1 24.5 10 2.2.3 4.4.4 6.5.4 9.4 0 17.4-2.8 23.4-8.3 8.7-7.9 11.5-20 8.4-35.3.7-.2 1.3-.4 2-.7 22.2-8.2 35.2-21.5 35.2-36.2 0-11.4-9.9-22.8-29.6-29.9z"/></g></svg>
+        <div class="sc-name">React.js</div>
+      </div>
+      <!-- Node.js -->
+      <div class="skill-cell">
+        <div class="sc-top"><span class="sc-num">08 · RUNTIME</span><span class="sc-arrow">↗</span></div>
+        <svg class="skill-logo" viewBox="0 0 128 128"><path fill="#83CD29" d="M112.771 30.334L68.674 4.729c-2.781-1.584-6.402-1.584-9.183 0L11.23 30.334C8.366 31.985 6.5 35.088 6.5 38.407v51.142c0 3.319 1.866 6.422 4.729 8.073l44.085 25.605c2.781 1.584 6.402 1.584 9.183 0l44.085-25.605c2.863-1.651 4.729-4.754 4.729-8.073V38.407c.017-3.319-1.849-6.422-4.540-8.073z"/><path fill="#404137" d="M107.86 29.733L62.862 3.416a5.483 5.483 0 00-5.587 0L12.277 29.733C9.875 31.114 8.5 33.671 8.5 36.373v52.58c0 2.703 1.375 5.26 3.777 6.641l44.998 26.317a5.483 5.483 0 005.587 0l44.998-26.317c2.402-1.381 3.777-3.938 3.777-6.641v-52.58c0-2.702-1.375-5.259-3.777-6.64z"/><path fill="#fff" d="M64.501 52.114c-6.273 0-11.336 5.063-11.336 11.336 0 6.273 5.063 11.335 11.336 11.335 6.273 0 11.335-5.062 11.335-11.335 0-6.273-5.062-11.336-11.335-11.336z"/></svg>
+        <div class="sc-name">Node.js</div>
+      </div>
+      <!-- Express -->
+      <div class="skill-cell">
+        <div class="sc-top"><span class="sc-num">09 · BACKEND</span><span class="sc-arrow">↗</span></div>
+        <svg class="skill-logo" viewBox="0 0 128 128"><path fill="#000" d="M126.67 98.44c-4.56 1.16-7.38.05-9.91-3.75-5.68-8.51-11.95-16.63-18-24.9-.78-1.07-1.59-2.12-2.6-3.45C89 76 81.85 85.2 75.14 94.77c-2.4 3.42-4.92 4.91-9.4 3.7l26.92-36.13L67.6 29.71c4.31-.84 7.29-.41 9.93 3.45 5.83 8.52 12.26 16.63 18.67 25.21 6.45-8.55 12.8-16.67 18.8-25.11 2.6-3.73 5.52-4.57 9.7-3.39l-13.01 17.2-1.83 2.47c1.5 2.1 2.92 4.1 4.41 6.08 8 10.82 15.9 21.68 23.58 32.73.92 1.31 1.59 2.6.02 4.09zM1.33 61.74c.72-3.61 1.2-7.29 2.2-10.83 6-21.43 30.6-30.34 47.5-17.06C60.93 41.64 63.39 52.62 62.9 65H7.1c-.84 22.23 15.15 35.62 35.54 28.78 7.19-2.4 11.36-8 13.47-15 1.07-3.51 2.84-4.86 6.35-3.78-1.69 9.25-6.68 18.9-14.7 23.38-13 7.25-29.4 4.8-39.37-5.87C3.15 92.83 1.04 87.6.33 82c-.2-1.66-.22-3.34-.33-5v-6c.1-1.24.2-2.49.37-3.74.12-.85.29-1.69.45-2.53l.51-2.99zM7.1 59h49.93c-.58-12.66-10.15-23.15-21.2-23.34-13.04-.22-26.12 9.9-28.73 23.34z"/></svg>
+        <div class="sc-name">Express.js</div>
+      </div>
+      <!-- MongoDB -->
+      <div class="skill-cell">
+        <div class="sc-top"><span class="sc-num">10 · DATABASE</span><span class="sc-arrow">↗</span></div>
+        <svg class="skill-logo" viewBox="0 0 128 128"><path fill="#439934" d="M88.4 22.3C79 9.1 69.2 3 66.9 1.5l-.5-.4c-.2-.2-.5-.4-.6-.6-.1-.2-.2-.4-.2-.5v-.1s-1.1 4.3-7.5 10.3c-3.2 3.1-8.5 7.1-14.3 11.5C36.6 27 28.9 33.2 24.9 40c-6.2 10.6-6.7 23-5.2 31.1 1.9 10.3 6.7 17.9 12.2 23.3l.2.2c.1.1.1.1.1.2.1.1.2.1.3.2h.1a33.8 33.8 0 0013.4 7.9h.1l-.1-.1h.1l.1.1h-.1l.1.1a56.6 56.6 0 003 1h.1v-.1h.1v.1h-.1l.1.1h-.1l.1.1h-.1c1 .3 2.1.6 3.1 1h.1v-.1h.1v.1h-.1l.2.1h-.1l.1.1c3 1.1 5.8 2.2 8.5 2.9v-.1a48.6 48.6 0 005.1.7h.2l.1.1h.6l.1.1h.5l.1.1h.5l.1.1h.6l.1.1h.6l.1.1h.6l.2.1a45.3 45.3 0 003.9-.1l.2-.1h.3l.2-.1h.3l.2-.1h.3l.2-.1a47.3 47.3 0 009.6-1.9h.1v-.1h.1v.1l.1-.1h.1l.1-.1h.1l.1-.1h.1l.1-.1h.1A50 50 0 00103 98.5h.1v-.1h.1v.1l.1-.1h.1A49.2 49.2 0 00110.4 89l.1-.2a51.4 51.4 0 007.2-13.5v-.1a51.5 51.5 0 002.2-14.7 51.5 51.5 0 00-1.3-11.5 49 49 0 00-5.9-13.5 49.1 49.1 0 00-8-9.8 49.5 49.5 0 00-9.8-5.6 50 50 0 00-11.3-3.3 50.1 50.1 0 00-5.2-.6zM67 90l-3.2 1.1-.1-61.3 2.9 5.2.4 55z"/></svg>
+        <div class="sc-name">MongoDB</div>
+      </div>
+      <!-- MySQL -->
+      <div class="skill-cell">
+        <div class="sc-top"><span class="sc-num">11 · DATABASE</span><span class="sc-arrow">↗</span></div>
+        <svg class="skill-logo" viewBox="0 0 128 128"><path fill="#00618A" d="M2 90.2h7.8V63.7l10.8 23.2c1.3 2.8 3 3.8 6.4 3.8s5-1 6.3-3.8l10.8-22.9v26.2h7.8V63.1c0-2.6-1-3.9-3.1-4.6-5-1.6-8.4-.3-10 2.8L28.2 83.9 17.5 61.3c-1.4-3.2-4.9-4.4-10-2.8-2.1.7-3.5 2-3.5 4.6v27.1z"/><path fill="#E48E00" d="M55.2 71h7.7v12.8c-.1.3.3 2.1 5.9 2.1 2.3 0 9.2-.3 9.2-.3V71h7.7v21.3s-8.2 2.1-17.1 2.1c-10.2 0-13.4-4.5-13.4-9.5V71z"/><path fill="#00618A" d="M89.4 90.2V63.7h7.3v19.7h11.4V73.2c0-4.9 3.4-8.4 8.9-8.4h7v7.8h-5.6c-2.5 0-3.9.8-3.9 3.1v14.5H89.4z"/></svg>
+        <div class="sc-name">MySQL</div>
+      </div>
+      <!-- Git -->
+      <div class="skill-cell">
+        <div class="sc-top"><span class="sc-num">12 · TOOLS</span><span class="sc-arrow">↗</span></div>
+        <svg class="skill-logo" viewBox="0 0 128 128"><path fill="#F34F29" d="M124.742 58.378L69.625 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.685 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.785-3.778-9.906 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.11c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.172 3.174 8.32 3.174 11.499 0l54.86-54.858a8.135 8.135 0 00.002-11.501z"/></svg>
+        <div class="sc-name">Git / GitHub</div>
+      </div>
+    </div>
+ 
+    <div class="focus-chips reveal" style="transition-delay:.2s">
+      <div class="chip">Full Stack Web Development</div>
+      <div class="chip">Problem Solving</div>
+      <div class="chip">Backend Systems</div>
+      <div class="chip">Creative Frontend Design</div>
+      <div class="chip">RESTful APIs</div>
+      <div class="chip">Database Design</div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══════════ PROJECTS ══════════ -->
+<section class="section" id="projects">
+  <div class="proj-head reveal">
+    <div>
+      <div class="section-tag">03 / Selected Work</div>
+      <div class="section-h">One project.<br>On purpose.</div>
+    </div>
+    <p>Quality over quantity. Built a full YouTube clone from scratch — not to copy, but to understand exactly how a real-world video platform works end to end.</p>
+  </div>
+ 
+  <div class="proj-card reveal" style="transition-delay:.08s">
+    <div class="proj-visual">
+      <!-- YouTube Mockup -->
+      <div class="yt-mock">
+        <div class="yt-header">
+          <div class="yt-logo">
+            <div class="yt-logo-icon"></div>
+            <span class="yt-logo-text">YouTube</span>
+          </div>
+          <div class="yt-search"></div>
+          <div class="yt-avatar"></div>
+        </div>
+        <div class="yt-cats">
+          <div class="yt-cat">All</div>
+          <div class="yt-cat gray">Music</div>
+          <div class="yt-cat gray">Gaming</div>
+          <div class="yt-cat gray">Live</div>
+          <div class="yt-cat gray">News</div>
+        </div>
+        <div class="yt-grid">
+          <div class="yt-card"><div class="yt-thumb yt-c1"></div><div class="yt-tl"></div><div class="yt-tl short"></div><div class="yt-prog"></div></div>
+          <div class="yt-card"><div class="yt-thumb yt-c2"></div><div class="yt-tl"></div><div class="yt-tl short"></div></div>
+          <div class="yt-card"><div class="yt-thumb yt-c3"></div><div class="yt-tl"></div><div class="yt-tl short"></div></div>
+          <div class="yt-card"><div class="yt-thumb yt-c4"></div><div class="yt-tl"></div><div class="yt-tl short"></div></div>
+          <div class="yt-card"><div class="yt-thumb yt-c5"></div><div class="yt-tl"></div><div class="yt-tl short"></div></div>
+          <div class="yt-card"><div class="yt-thumb yt-c6"></div><div class="yt-tl"></div><div class="yt-tl short"></div></div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="proj-info">
+      <div class="proj-meta">
+        <span class="proj-case">Case Study · 01</span>
+        <span class="proj-built"><div class="proj-built-dot"></div> Built</span>
+      </div>
+      <div class="proj-name">YouTube Clone</div>
+      <div class="proj-type">Personal · Full Stack</div>
+      <p class="proj-desc">
+        A fully functional YouTube-inspired video platform — built from scratch. Users can browse videos, search, play, like, and manage their own channel. Complete with authentication, video upload, and a responsive feed that mirrors the real YouTube experience.
+      </p>
+      <div class="proj-feats">
+        <div class="proj-feat">User auth with JWT — register, login, protected routes</div>
+        <div class="proj-feat">Video upload, thumbnail generation &amp; streaming</div>
+        <div class="proj-feat">Like / dislike, subscribe, comment system</div>
+        <div class="proj-feat">Search &amp; filter by category, trending, latest</div>
+        <div class="proj-feat">Responsive grid layout — works on all screen sizes</div>
+      </div>
+      <div class="proj-tags">
+        <span class="proj-tag">React.js</span>
+        <span class="proj-tag">Node.js</span>
+        <span class="proj-tag">Express</span>
+        <span class="proj-tag">MongoDB</span>
+        <span class="proj-tag">JWT Auth</span>
+        <span class="proj-tag">REST API</span>
+      </div>
+      <div class="proj-btns">
+        <a class="btn-sm-dark" href="#" onclick="return false">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Live Demo
+        </a>
+        <a class="btn-sm-light" href="#" onclick="return false">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══════════ CONTACT ══════════ -->
+<section class="section full-bleed" id="contact">
+  <div class="inner">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="section-tag">04 / Contact</div>
+        <h2>Let's build<br>something good.</h2>
+        <p>Whether it's a project, a collaboration, or just a curious hello — I'd love to hear from you. I reply within 24–48 hours.</p>
+ 
+        <a class="contact-link" href="mailto:abdulrazzaq2779@gmail.com">
+          <div class="cl-icon">
+            <svg viewBox="0 0 24 24"><path class="fill-icon" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+          </div>
+          <div>
+            <div class="cl-label">Email</div>
+            <div class="cl-val">abdulrazzaq2779@gmail.com</div>
+          </div>
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/mohammed-razzaq-6a2362384" target="_blank" rel="noopener">
+          <div class="cl-icon">
+            <svg viewBox="0 0 24 24"><path class="fill-icon" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div>
+            <div class="cl-label">LinkedIn</div>
+            <div class="cl-val">mohammed-razzaq-6a2362384</div>
+          </div>
+        </a>
+        <a class="contact-link" href="tel:+916309696520">
+          <div class="cl-icon">
+            <svg viewBox="0 0 24 24"><path class="stroke-icon" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.91-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="cl-label">Phone</div>
+            <div class="cl-val">+91 6309 696 520</div>
+          </div>
+        </a>
+      </div>
+ 
+      <!-- Contact Form -->
+      <form class="contact-form reveal right" style="transition-delay:.12s" onsubmit="sendForm(event)">
+        <div class="form-row">
+          <div class="f-field">
+            <label class="f-label">01 · Your Name</label>
+            <input type="text" placeholder="Ada Lovelace" required />
+          </div>
+          <div class="f-field">
+            <label class="f-label">02 · Email</label>
+            <input type="email" placeholder="ada@example.com" required />
+          </div>
+        </div>
+        <div class="f-field full-row" style="border-bottom:1px solid var(--border);padding:1.25rem 0">
+          <label class="f-label">03 · Subject</label>
+          <input type="text" placeholder="Project · Collab · Hello" />
+        </div>
+        <div class="f-field full-row" style="border-bottom:1px solid var(--border);padding:1.25rem 0">
+          <label class="f-label">04 · Your Message</label>
+          <textarea placeholder="Tell me a little about what you have in mind..." required></textarea>
+        </div>
+        <div class="form-foot">
+          <span class="form-note">↑ Replies within 24–48h</span>
+          <button type="submit" class="btn-send" id="send-btn">
+            Send Message
+            <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+ 
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-tag">Currently</div>
+    <div class="footer-big">Open to learning.<br>Open to building.</div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2025 Mohammed Abdul Razzaq · All rights reserved</div>
+    <div class="footer-logo">M.A.R/DEV</div>
+    <div class="footer-copy">Built with pure HTML · CSS · JS · Hyderabad 🇮🇳</div>
+  </div>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
